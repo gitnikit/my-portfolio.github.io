@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nikita Bhusal | Full Stack Developer</title>
+<meta name="description" content="Portfolio of Nikita Bhusal — BSc (Hons) Computer Science student and aspiring full stack developer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Loading Screen -->
+<div class="loader" id="loader">
+  <div class="loader-code">
+    <span>&lt;</span><span class="loader-name">Nikita</span><span>/&gt;</span>
+  </div>
+</div>
+
+<!-- Custom Cursor -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- Scroll Progress -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Particle Background -->
+<canvas id="particles"></canvas>
+
+<!-- Navbar -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="logo">NB<span class="dot">.</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active" data-nav>Home</a>
+      <a href="#about" class="nav-link" data-nav>About</a>
+      <a href="#education" class="nav-link" data-nav>Education</a>
+      <a href="#skills" class="nav-link" data-nav>Skills</a>
+      <a href="#experience" class="nav-link" data-nav>Experience</a>
+      <a href="#projects" class="nav-link" data-nav>Projects</a>
+      <!-- <a href="#certs" class="nav-link" data-nav>Certificates</a> -->
+      <a href="#services" class="nav-link" data-nav>Services</a>
+      <a href="#testimonials" class="nav-link" data-nav>Testimonials</a>
+      <a href="#contact" class="nav-link" data-nav>Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="hero-text reveal">
+        
+        <h1 class="hero-title">
+          I'm <span class="gradient-text">Nikita Bhusal</span>
+        </h1>
+        <div class="hero-typed">
+          <span id="typedText"></span><span class="cursor-blink">|</span>
+        </div>
+        <p class="hero-desc">BSc (Hons) Computer Science student building practical, real-world projects while preparing for an internship in software development.</p>
+        <div class="hero-actions">
+          <a href="Nikita_Bhusal_Resume.pdf" class="btn btn-primary" download>
+            <span>Download Resume</span>
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <span>Get In Touch</span>
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/gitnikit" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+          <a href="https://linkedin.com/in/nikita-bhusal-424390404" target="_blank" rel="noopener" aria-label="LinkedIn">IN</a>
+          <a href="mailto:nikita.bhusal24@gmail.com" aria-label="Email">@</a>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="hero-photo-wrap">
+          <div class="hero-photo-glow"></div>
+          <img src="profile.jpeg" alt="Nikita Bhusal" class="hero-photo">
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <p class="section-eyebrow reveal">About</p>
+      <h2 class="section-title reveal">Who I am</h2>
+      <div class="about-grid">
+        <p class="about-text reveal">I am an enthusiastic and dedicated Computer Science student passionate about programming, web development, and problem solving. I enjoy learning new technologies and building practical projects that improve my skills. I am currently looking for internship opportunities where I can apply my knowledge while continuing to grow professionally.</p>
+        <div class="about-facts reveal">
+          <div class="fact-card"><span>Based in</span><strong>Chitwan, Nepal</strong></div>
+          <div class="fact-card"><span>Studying</span><strong>BSc (Hons) Computer Science</strong></div>
+          <div class="fact-card"><span>Focus</span><strong>Full Stack Development</strong></div>
+          <div class="fact-card"><span>Languages</span><strong>Nepali · English · Hindi</strong></div>
+        </div>
+      </div>
+      <div class="interests reveal">
+        <span class="chip">Web Development</span>
+        <span class="chip">Programming</span>
+        <span class="chip">Dancing</span>
+        <span class="chip">Content Creation</span>
+        <span class="chip">Crafts</span>
+        <span class="chip">Painting</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="section" id="education">
+    <div class="container">
+      <p class="section-eyebrow reveal">Education</p>
+      <h2 class="section-title reveal">Academic timeline</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2025 — Present</span>
+            <h3>BSc (Hons) Computer Science</h3>
+            <p>ISMT College, Chitwan</p>
+            <ul class="timeline-list">
+              <li>Introduction to Programming</li>
+              <li>Full Stack Development</li>
+              <li>Specialist Project</li>
+              <li>Software Engineering</li>
+              <li>Emerging Technologies</li>
+              <li>Computer Architecture</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2023 — 2025</span>
+            <h3>+2 HSEB, Multidisciplinary Sciences</h3>
+            <p>Ankuram Academy, Chitwan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section" id="skills">
+    <div class="container">
+      <p class="section-eyebrow reveal">Skills</p>
+      <h2 class="section-title reveal">What I work with</h2>
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <h3>Frontend</h3>
+          <div class="skill-bar"><div class="skill-info"><span>HTML</span><span>90%</span></div><div class="bar"><div class="bar-fill" data-level="90"></div></div></div>
+          <div class="skill-bar"><div class="skill-info"><span>CSS</span><span>85%</span></div><div class="bar"><div class="bar-fill" data-level="85"></div></div></div>
+          <div class="skill-bar"><div class="skill-info"><span>JavaScript</span><span>75%</span></div><div class="bar"><div class="bar-fill" data-level="75"></div></div></div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Programming</h3>
+          <div class="skill-bar"><div class="skill-info"><span>Python</span><span>80%</span></div><div class="bar"><div class="bar-fill" data-level="80"></div></div></div>
+          <div class="skill-bar"><div class="skill-info"><span>C#</span><span>70%</span></div><div class="bar"><div class="bar-fill" data-level="70"></div></div></div>
+          <div class="skill-bar"><div class="skill-info"><span>C</span><span>65%</span></div><div class="bar"><div class="bar-fill" data-level="65"></div></div></div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Tools</h3>
+          <div class="skill-bar"><div class="skill-info"><span>Git &amp; GitHub</span><span>80%</span></div><div class="bar"><div class="bar-fill" data-level="80"></div></div></div>
+          <div class="skill-bar"><div class="skill-info"><span>VS Code</span><span>90%</span></div><div class="bar"><div class="bar-fill" data-level="90"></div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="section" id="experience">
+    <div class="container">
+      <p class="section-eyebrow reveal">Experience</p>
+      <h2 class="section-title reveal">Where I've worked</h2>
+      <div class="exp-card reveal">
+        <div class="exp-head">
+          <div>
+            <h3>Data Entry Operator</h3>
+            <p>Lumbini Offset Press</p>
+          </div>
+          <span class="timeline-date">April 2026 — Present</span>
+        </div>
+        <ul class="timeline-list">
+          <li>Data entry</li>
+          <li>Nepali typing</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <div class="container">
+      <p class="section-eyebrow reveal"> Projects</p>
+      <h2 class="section-title reveal">Selected work</h2>
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <div class="project-shot">WeAreCars</div>
+          <div class="project-body">
+            <h3>WeAreCars</h3>
+            <p>A Windows-based Car Rental Management System where authorized staff manage customer and rental information.</p>
+            <div class="project-tags"><span>C#</span><span>Desktop App</span></div>
+            <div class="project-links">
+              <a href="https://github.com/gitnikit/WeAreCars" target="_blank" rel="noopener">GitHub →</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-shot">Phishing Sim</div>
+          <div class="project-body">
+            <h3>Educational Phishing Simulation</h3>
+            <p>A simulated Facebook login page built strictly for cybersecurity awareness and learning purposes.</p>
+            <div class="project-tags"><span>HTML</span><span>Security Awareness</span></div>
+            <div class="project-links">
+              <a href="https://gitnikit.github.io/phisingsite/" target="_blank" rel="noopener">Live Demo →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates -->
+  <!-- <section class="section" id="certs">
+    <div class="container">
+      <p class="section-eyebrow reveal"> Achievements</p>
+      <h2 class="section-title reveal">Certifications</h2>
+      <div class="certs-grid">
+        <div class="cert-card placeholder reveal">
+          <span>+</span>
+          <p>Add your certificate</p>
+        </div>
+        <div class="cert-card placeholder reveal">
+          <span>+</span>
+          <p>Add your certificate</p>
+        </div>
+        <div class="cert-card placeholder reveal">
+          <span>+</span>
+          <p>Add your certificate</p>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Services -->
+  <section class="section" id="services">
+    <div class="container">
+      <p class="section-eyebrow reveal"> Services</p>
+      <h2 class="section-title reveal">How I can help</h2>
+      <div class="services-grid">
+        <div class="service-card reveal"><h3>Frontend Development</h3><p>Clean, semantic HTML/CSS/JS builds that translate designs into working interfaces.</p></div>
+        <div class="service-card reveal"><h3>Full Stack Learning</h3><p>Currently building end-to-end skills across the stack through coursework and projects.</p></div>
+        <div class="service-card reveal"><h3>Responsive Design</h3><p>Layouts that adapt cleanly across desktop, tablet, and mobile.</p></div>
+        <div class="service-card reveal"><h3>UI Development</h3><p>Interactive, accessible interfaces with attention to detail and micro-interactions.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="section stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card reveal"><span class="stat-num" data-target="2">0</span><p>Projects</p></div>
+        <div class="stat-card reveal"><span class="stat-num" data-target="6">0</span><p>Technologies</p></div>
+        <div class="stat-card reveal"><span class="stat-num" data-target="500">0</span><p>Learning Hours</p></div>
+        <div class="stat-card reveal"><span class="stat-num" data-target="0">0</span><p>Certificates</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <p class="section-eyebrow reveal">Testimonials</p>
+      <h2 class="section-title reveal">What people say</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <p>"Nikita is a fast learner who consistently delivers clean, well-structured work. A great addition to any team."</p>
+          <div class="testimonial-author"><strong>Sample Name</strong><span>Lecturer, ISMT College</span></div>
+        </div>
+        <div class="testimonial-card reveal">
+          <p>"Reliable, detail-oriented, and always willing to go the extra mile on projects."</p>
+          <div class="testimonial-author"><strong>Sample Name</strong><span>Project Collaborator</span></div>
+        </div>
+        <div class="testimonial-card reveal">
+          <p>"A promising developer with a strong eye for design and problem solving."</p>
+          <div class="testimonial-author"><strong>Sample Name</strong><span>Mentor</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container">
+      <p class="section-eyebrow reveal"> Contact</p>
+      <h2 class="section-title reveal">Let's work together</h2>
+      <div class="contact-grid">
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <input type="text" id="name" name="name" placeholder=" " required>
+              <label for="name">Your Name</label>
+              <span class="error-msg" id="nameError"></span>
+            </div>
+            <div class="form-field">
+              <input type="email" id="email" name="email" placeholder=" " required>
+              <label for="email">Your Email</label>
+              <span class="error-msg" id="emailError"></span>
+            </div>
+          </div>
+          <div class="form-field">
+            <input type="text" id="subject" name="subject" placeholder=" " required>
+            <label for="subject">Subject</label>
+            <span class="error-msg" id="subjectError"></span>
+          </div>
+          <div class="form-field">
+            <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+            <label for="message">Message</label>
+            <span class="error-msg" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn btn-primary full">Send Message</button>
+          <p class="form-success" id="formSuccess">Message sent! I'll get back to you soon.</p>
+        </form>
+        <div class="contact-info reveal">
+          <div class="info-item"><span>Email</span><a href="mailto:nikita.bhusal24@gmail.com">nikita.bhusal24@gmail.com</a></div>
+          <div class="info-item"><span>Phone</span><a href="tel:+9779867175328">+977 9867175328</a></div>
+          <div class="info-item"><span>Location</span><p>Chitwan, Nepal</p></div>
+          <div class="map-placeholder">Map placeholder</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <a href="#home" class="logo">NB<span class="dot">.</span></a>
+    <div class="footer-socials">
+      <a href="https://github.com/gitnikit" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/nikita-bhusal-424390404" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:nikita.bhusal24@gmail.com">Email</a>
+    </div>
+    <p class="footer-copy">© All rights reserved.</p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
